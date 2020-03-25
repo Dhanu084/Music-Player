@@ -1,40 +1,10 @@
 import React from 'react';
 
 class CartItem extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            title : 'Asus',
-            price : 25000,
-            Quantity : 1,
-            img : ''
-        }
-        // this.increaseQuantity = this.increaseQuantity.bind(this); - if we don't use arrow function use this to pass "this" to the function
-    }
-    increaseQuantity = () =>{
-        
-        //inherited from react.component, which tells react to render the changes in state variables
-        // this.setState({//method 1 - object form
-        //     Quantity : this.state.Quantity+=1
-        // })
 
-        this.setState((prevState) => {//method2 function form - when previous state is required
-            return{
-                Quantity : prevState.Quantity+1
-            }
-        })
-    }
-
-    decreaseQuantity =() =>{
-        this.setState((prevState) => {
-            if(prevState.Quantity==0) return;
-            return {
-                Quantity : prevState.Quantity-1
-            }
-        })
-    }
     render(){
-        const {title,price,Quantity} = this.state;
+        console.log(this.props);
+        const {title,price,Quantity} = this.props.product;
         return (
             <div className="cart-item">
                 <div className="left-block">
@@ -50,13 +20,13 @@ class CartItem extends React.Component{
                         <img alt="increase"
                         className="action-icons" 
                         src="https://image.flaticon.com/icons/svg/1828/1828817.svg" 
-                        onClick={this.increaseQuantity} />
+                        onClick={this.props.increaseQuantity} />
 
 
                         <img alt="decrease" 
                         className="action-icons" 
                         src="https://image.flaticon.com/icons/svg/463/463700.svg"
-                        onClick={ this.decreaseQuantity } />
+                        onClick={ this.props.decreaseQuantity } />
 
                         <img alt="delete" 
                         className="action-icons" 
