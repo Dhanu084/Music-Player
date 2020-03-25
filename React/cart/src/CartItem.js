@@ -27,6 +27,7 @@ class CartItem extends React.Component{
 
     decreaseQuantity =() =>{
         this.setState((prevState) => {
+            if(prevState.Quantity==0) return;
             return {
                 Quantity : prevState.Quantity-1
             }
@@ -71,7 +72,7 @@ class CartItem extends React.Component{
 const styles = {
     image : {
         height : 110,
-        width : 110,
+        width : 170,
         borderRadius : 4,
         background:'#ccc'
     }
