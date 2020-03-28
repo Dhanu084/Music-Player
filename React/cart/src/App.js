@@ -37,6 +37,9 @@ class App extends React.Component{
 
       this.db
       .collection('products')
+      //.where('price','==',28000)
+      //.where('title','==','Nokia 8.1')  //if we want to query the db
+      .orderBy('price',"desc")
       .onSnapshot((snapshot)=>{
         const products = snapshot.docs.map((doc) => {
           const data = doc.data();
@@ -98,6 +101,8 @@ class App extends React.Component{
     const {products} = this.state;
     const index = products.indexOf(product);
    
+    if(products[index].Quantity==0) return;
+
     const dbRef = this.db.collection('products').doc(products[index].id);
     dbRef.update({
       Quantity : products[index].Quantity - 1
