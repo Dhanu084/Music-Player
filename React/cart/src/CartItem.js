@@ -8,7 +8,7 @@ const CartItem = (props) =>{
         const { product,onIncreaseQuantity,onDecreaseQuantity,onDeleteProduct} = props;
         return (
             <div className="cart-item">
-                <div className="left-block">
+                <div className="left-block" style={{width : '50%', height:'100%'}}>
                     <img style ={styles.image} src = {product.img} />
                 </div>
 

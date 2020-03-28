@@ -10,11 +10,13 @@ body {
   display: inline-flex;
   margin: 20px 10px;
   height: 180px;
-  width: 350px;
+  width: 500px;
+  margin: 15px auto;
 }
 .cart-item .right-block {
   padding: 0 20px;
   margin-left: 7%;
+  width: 50%;
 }
 .cart-item-actions {
   margin-top: 20px;
@@ -32,4 +34,5 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 
