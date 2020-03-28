@@ -9,8 +9,8 @@ body {
 .cart-item {
   display: inline-flex;
   margin: 20px 10px;
+  height: 180px;
   width: 350px;
-  border : 2px solid black;
 }
 .cart-item .right-block {
   padding: 0 20px;
@@ -32,3 +32,4 @@ body {
   display: flex;
   flex-direction: column;
 }
+
