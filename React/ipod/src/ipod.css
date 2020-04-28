@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Ipod{
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    left:35%;
+    border: 2px solid black;
+}
+
+.screen{
+    height: 50%;
+    border-bottom:2px solid black;
+}
+.controls{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.Outer{
+    height: 80%;
+    width: 70%;
+    left: 14%;
+    top: 9%;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Inner{
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border:2px solid black;
+    border-radius:50%;    
+}
+
+.Inner:hover{
+    cursor: pointer;
+}
+
+.screen-elements{
+    padding: 15px;
+}
