@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* style for the whole component */
 .Ipod{
     height: 500px;
     width: 350px;
@@ -9,18 +9,33 @@ body{
     top: 10%;
     left:35%;
     border: 2px solid black;
+    border-radius:7%;
+    background-color:lightseagreen;
 }
-
+/* style for the screen */
 .screen{
+    margin: auto;
     height: 50%;
-    border-bottom:2px solid black;
+    width: 95%;
+    border:0.2px solid black;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius:10%;
+    border-bottom-left-radius :10%;
+    background-color:white;
 }
+/* style for the lower part which contains the menus */
 .controls{
-    height: 50%;
-    width: 100%;
+    height: 49%;
+    width: 98.5%;
     position: relative;
+    background-color:lightseagreen;
+    margin-top: -2%;
+    border-bottom-right-radius: 8%;
+    border-bottom-left-radius :8%
 }
 
+/* style for the outer circle which contains the icons */
 .Outer{
     height: 80%;
     width: 70%;
@@ -29,8 +44,10 @@ body{
     border: 2px solid black;
     border-radius: 50%;
     position: absolute;
+    background-color:white;
 }
 
+/* style for the inner circle which is used the select */
 .Inner{
     height: 60%;
     width: 60%;
@@ -47,4 +64,76 @@ body{
 
 .screen-elements{
     padding: 15px;
+}
+
+/* generic class for the icons on the outer div element */
+.flash{
+    visibility: hidden;
+    height: 0%;
+    border-bottom:2px solid grey;
+    position: relative;
+    top:0%;
+    background-color:white;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius :10%;
+    margin:auto;
+    align-content: center;
+}
+
+/* the selection button in the middle */
+#menu-button{
+    color: rgb(128, 128, 145);
+    position: relative;
+    left:43.5%;
+    top:15%;
+    border:0px;
+    background-color:white;
+    font-weight: bolder;
+    z-index: 1;
+}
+#menu-button:hover{
+    cursor: pointer;
+}
+
+/* forward icon */
+.fa-forward{
+    color: rgb(128, 128, 145);
+    position: absolute;
+    top: 42%;
+    left:77%;
+    font-size: 10px;
+    z-index: 1;
+}
+
+/* backward icon */
+.fa-backward{
+    color: rgb(128, 128, 145);
+    position: relative;
+    top: 42%;
+    left:5%;
+    font-size: 10px;
+    z-index: 1;
+}
+
+/* play icon */
+.fa-play{
+    color: rgb(128, 128, 145);
+    position: relative;
+    top: 78%;
+    left:27%;
+    font-size: 10px;
+    z-index: 1;
+}
+/* pause icon */
+.fa-pause{
+    color: rgb(128, 128, 145);
+    position: relative;
+    top: 78%;
+    left:30%;
+    font-size: 10px;
+    z-index: 1;
+}
+/* the div which is created dynamically using JavaScript */
+#title{
+    margin: auto;
 }
