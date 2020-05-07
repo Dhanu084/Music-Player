@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App{
+  height: 1200px;
+  width: 400px;
+  margin: auto;
+}
+#press{
+  margin-top: 50%;
+}
+select{
+  width: 80%;
+  padding: 10px 0px;
+}
+select option{
+  padding: 10px 10px;
+}
+#button button{
+  height: 50%;
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 50%;
+  padding: 15px;
+  background-color: cornflowerblue;
+  color: white;
+}
+#button button:hover{
+  background-color:red;
+  color: white;
+}
+.tool{
+  visibility: hidden;
+}
+
+.top{
+  visibility: visible;
+  position: absolute;
+  top:25%;
+  left:40%;
+  font-family: lucida Sans;
+  font-size: 1.5rem;
+}
+
+.bottom{
+  visibility: visible;
+  position: absolute;
+  top:50%;
+  left:40%;
+  font-family: lucida Sans;
+  font-size: 1.5rem;
+}
+
+.right{
+  visibility: visible;
+  position: absolute;
+  top:41%;
+  left:55%;
+  font-family: lucida Sans;
+  font-size: 1.5rem;
+}
+
+.left{
+  visibility: visible;
+  position: absolute;
+  top:41%;
+  left:25%;
+  font-family: lucida Sans;
+  font-size: 1.5rem;
+}
